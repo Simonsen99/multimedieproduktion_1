@@ -1,3 +1,4 @@
+/*Reset Style*/
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +12,10 @@ body {
     min-height: 100vh;
     background-color: #EEEFE9;
 }
-
+/*Styling af navbar */
 header {
     position: fixed;
+    height: 200px;
     top: 0;
     left: 0;
     right: 0;
@@ -26,10 +28,11 @@ header {
     z-index: 1000;
 }
 
-header .logo {
-    font-weight: bolder;
-    font-size: 25px;
-    color: #EEEFE9;
+
+
+header .logo img {
+    height: 300px;
+    margin-top: 55px;
 }
 
 header .navbar ul{
@@ -44,7 +47,7 @@ header .navbar ul li{
 
 header .navbar ul li a {
     color: #EEEFE9;
-    font-size: 20px;
+    font-size: 25px;
     padding: 20px;
     display: block;
 }
@@ -83,13 +86,30 @@ header label {
 }
 
 
+footer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: #244436;
+}
+
+footer .footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 20px
+}
+
+footer .about {
+position: relative;
+color: #EEEFE9;
 
 
+}
 
-
-
-
-
+/*Media queries*/
 @media (max-width:991px) {
 
     header {
