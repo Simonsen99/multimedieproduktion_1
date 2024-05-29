@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    text-transform: capitalize;
     text-decoration: none;
 }
 
@@ -86,7 +85,7 @@ header label {
 }
 
 /*Footer*/
-footer {
+/* footer {
     position: relative;
     width: 100%;
     height: auto;
@@ -100,13 +99,22 @@ footer .footer{
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     grid-gap: 20px
+} */
+
+section.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    grid-gap: 80px;
+    background-color: #244436;
 }
 
 footer .about {
     position: relative;
     color: #EEEFE9;
     font-weight: 500;
-    left: 95px;
+  
 }
 
 .about h2 {
@@ -143,17 +151,14 @@ footer .p1-footer {
 .links {
     position: relative;
     color: #EEEFE9;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
     
 }
 
 .links h2{
     margin-bottom: 15px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    
 }
 
 .links li {
@@ -166,8 +171,49 @@ footer .p1-footer {
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
+    font-size: 20px;
     
 }
+
+.links li a:hover {
+    color: #FAC85C;
+
+}
+
+.social_media {
+    color: #EEEFE9;
+}
+
+.contact {
+    position: relative;
+    color: #EEEFE9;
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+}
+
+.contact h2 {
+    color: #EEEFE9;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact ul li a  {
+    color: #EEEFE9;
+    
+}
+
+.contact ul li a i {
+    left: 0;
+    margin: 15px;
+}
+
+.contact_info p {
+    display: grid;
+    grid-template-columns: ;
+}
+
 
 
 
@@ -181,8 +227,13 @@ footer .p1-footer {
         padding: 20px;
     }
 
+    .logo {
+        margin-left: -90px;
+    }
+
     header label {
         display: initial;
+        font-size: 30px;
     }
 
     header .navbar{
@@ -207,5 +258,17 @@ footer .p1-footer {
 
     #menu-bar:checked ~ .navbar {
         display: initial;
+    }
+
+
+
+
+
+
+    footer .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 70px;
+        padding: 20px;
     }
 }
